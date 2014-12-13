@@ -12,6 +12,7 @@ function reset() {
     var time = new Time();
     localStorage.time = JSON.stringify(time);
     remaining.innerHTML = n(time.hours) + ':' + n(time.minutes) + ':' + n(time.seconds);
+    button.style.background = 'green';
     if (working === true) {
         start();
     }
