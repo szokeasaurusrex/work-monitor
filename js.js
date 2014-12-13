@@ -32,15 +32,16 @@ function count() {
     localStorage.time = JSON.stringify(time);
     remaining.innerHTML = n(time.hours) + ':' + n(time.minutes) + ':' + n(time.seconds);
     if (time.hours <= 0 && time.minutes <= 0 && time.seconds <= 0 && override === false) {
-        alert('Time to stop working!')
+        alert('Time to stop working! :-D')
         start();
+        button.style.background = 'red';
     }
 }
 
 function start() {
     if (working === false) {
         if (time.hours <= 0 && time.minutes <= 0 && time.seconds <= 0) {
-            alert('You are out of time.');
+            alert('You are out of time. :-D');
         } else {
             interval = setInterval(function() {count();}, 1000);
             working = true;
