@@ -1,6 +1,6 @@
 function Time() {
     var date = new Date();
-    this.hours = 1;
+    this.hours = 30;
     this.minutes = 0;
     this.seconds = 0;
     this.countDown = true;
