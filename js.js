@@ -119,7 +119,6 @@ function updateBar() {
 var remaining = document.getElementById('remaining');
 var button = document.getElementById('work');
 var body = document.getElementById('body');
-//var reset_button = document.getElementById('reset');
 var interval, working;
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
@@ -128,10 +127,6 @@ var cheight = 32;
 
 working = false;
 button.onclick = function () {start();};
-/*reset_button.onclick = function () {
-    var con = confirm('Are you sure you want to reset the week? You will lose the information about the amount of work time remaining.');    
-    if (con === true) time = reset();
-};*/
 
 if (!(localStorage.time)) var time = reset();
 else {
